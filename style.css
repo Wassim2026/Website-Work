@@ -1,0 +1,539 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #FFD700; /* Gold color for visibility */
+    color: lab(55.51% -38.4 1.06);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Header and Navigation Bar */
+.header {
+    background-color: #00FFFF; /* Blue color inspired by AMR Insights */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: rgb(1, 1, 1);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo-img {
+    height: 40px; /* Adjust based on your logo size */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Gold hover effect */
+}
+
+/* Dropdown Menu */
+.dropdown .dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #333;
+    font-weight: normal;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #005B96;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Right Section: Search and Social Icons */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.nav-right a {
+    color: white;
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.nav-right a:hover {
+    color: #FFD700;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 400px;
+    background-image: url('earth.png'); /* Using earth.png from your folder */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+}
+
+/* Two-Column Section (Refined to Match AMR Insights) */
+.two-column {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Matches AMR Insights' narrower width */
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 40px; /* Exact gap between columns as in AMR Insights */
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 400px; /* Ensures columns don't get too narrow */
+    padding: 10px 0; /* Matches the minimal padding in AMR Insights */
+}
+
+.left-column h2, .right-column h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #005B96;
+}
+
+.left-column p, .right-column p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.left-column a {
+    color: #005B96;
+    text-decoration: none;
+}
+
+.left-column a:hover {
+    text-decoration: underline;
+}
+
+.join-btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #005B96;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.join-btn:hover {
+    background-color: #e6c200;
+}
+
+/* Stats Section */
+.stats {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.stats h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #005B96;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+}
+
+.stat-item span {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #005B96;
+    margin-bottom: 10px;
+}
+
+/* Upcoming Event Section */
+.event {
+  background-color: #00ffff;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.event h2 {
+    font-size: 18px;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.event h3 {
+    font-size: 24px;
+    color: #005B96;
+    margin-bottom: 10px;
+}
+
+.event p {
+    margin-bottom: 10px;
+}
+
+.event-btn, .more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 5px;
+}
+
+.event-btn {
+    background-color: #FFD700;
+    color: #005B96;
+    font-weight: bold;
+}
+
+.event-btn:hover {
+    background-color: #e6c200;
+}
+
+.more-btn {
+    background-color: #005B96;
+    color: white;
+}
+
+.more-btn:hover {
+    background-color: #004a7c;
+}
+
+/* Four-Column Section with Image on Top (Styled to Match AMR Insights Design) */
+.four-column {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Matches AMR Insights' narrower width */
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 40px; /* Exact gap between columns as in AMR Insights */
+    flex-wrap: wrap;
+}
+
+.four-column .column {
+    flex: 1;
+    min-width: 200px; /* Ensures columns don't get too narrow */
+    padding: 10px 0; /* Matches the minimal padding in AMR Insights */
+    text-align: center; /* Center-align content for a polished look */
+}
+
+.four-column .column-image {
+    width: 100%;
+    max-height: 150px; /* Limits the height to maintain proportions */
+    object-fit: cover; /* Ensures the image scales nicely */
+    border-radius: 5px; /* Adds a subtle rounded corner */
+    margin-bottom: 20px; /* Space between image and heading */
+}
+
+.four-column h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #005B96; /* Blue color from AMR Insights */
+}
+
+.four-column p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.four-column .action-btn {
+    display: inline-block;
+    background-color: #FFD700; /* Gold color from AMR Insights */
+    color: #005B96;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.four-column .action-btn:hover {
+    background-color: #e6c200; /* Slightly darker gold on hover */
+}
+
+/* Mobile-Friendly Design */
+@media (max-width: 768px) {
+    .four-column {
+        flex-direction: column;
+        gap: 20px; /* Reduced gap for mobile */
+    }
+
+    .four-column .column {
+        min-width: 100%; /* Full width on mobile */
+        padding: 10px 0;
+    }
+
+    .four-column .column-image {
+        max-height: 200px; /* Slightly larger on mobile for better visibility */
+    }
+}
+/* Newsletter Sign-Up Section */
+.newsletter {
+    background-color: #005B96;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.newsletter-form button {
+    background-color: #FFD700;
+    color: #005B96;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.newsletter-form button:hover {
+    background-color: #e6c200;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+}
+
+.footer-right a {
+    color: white;
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.footer-right a:hover {
+    color: #FFD700;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Mobile-Friendly Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #005B96;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        background-color: #004a7c;
+        box-shadow: none;
+    }
+
+    .dropdown-content a {
+        color: white;
+    }
+
+    .nav-right {
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .two-column {
+        flex-direction: column;
+        gap: 20px; /* Reduced gap for mobile */
+    }
+
+    .column {
+        min-width: 100%; /* Full width on mobile */
+        padding: 10px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+}
